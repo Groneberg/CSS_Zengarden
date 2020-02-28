@@ -1,0 +1,440 @@
+/* Site Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Site CSS */
+/* Fonts by Brian Kent */
+@font-face { font-family: 'plasdrip'; src: url('../fonts/plasdrip.ttf')  format('truetype')}
+/* A theme for murder font by Chris Hansen all rights reserved Contact: urban_ninja4real@hotmail.com */
+@font-face { font-family: 'murder'; src: url('../fonts/a Theme for murder.ttf')  format('truetype')}
+/* LIVING HELL  FONT  by Chris Hansen, all rights reserved 2004 Contact: urban_ninja4real@hotmail.com */
+@font-face { font-family: 'livinghell'; src: url('../fonts/Living Hell.ttf')  format('truetype')}
+
+body {
+	background-color: #1f1f1f;
+	background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	color: #fff;
+	line-height: 1.5;
+}
+
+header, footer{
+	background: url(../img/blackmamba_@2X.png);
+	padding: 5px;
+	border: 1px solid;
+}
+
+h1 {
+	font-family: murder;
+	font-size: 6em;
+	color: crimson;
+	text-align: center;
+	text-shadow: 0 0 25px crimson, 0 0 10px silver, 0 5px 5px maroon;
+	transform:rotate(-7grad);
+}
+
+h2 {
+	margin-left: 20px;
+	font-family: livinghell;
+	font-size: 2em;
+}
+
+h3 {
+	font-family: livinghell;
+	font-size: 1.5em;
+}
+
+abbr {
+	color: crimson;
+	font-family: plasdrip;
+	font-size: larger;
+	text-shadow: 0 3px 5px maroon;
+}
+	
+.page-wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#zen-intro article {
+	padding: 0 15%;
+	background: url(../img/dark-triangles.png);
+}
+
+main article, aside div div {
+	padding: 2%;
+}
+
+main article {
+	background: url(../img/dark-triangles.png);
+}
+
+main {
+	width: 75%;
+	float: left;
+}
+
+aside .wrapper div, #zen-intro article, 
+#zen-supporting article {
+	border: 1px dotted #fff;
+}
+
+aside .wrapper div, #zen-intro article, #zen-supporting article {
+	border-top: none;
+}
+
+#zen-supporting article:last-of-type {
+	border-bottom: none;
+}
+
+#zen-supporting article:not(#zen-benefits) {
+	columns: 2;
+	text-align: justify;
+	column-gap: 2em;
+}
+
+aside {
+	float: right;
+	width: 25%;
+	background: url(../img/blackmamba_@2X.png);
+}
+
+ul li::before {
+	content: url(../img/miniGhost.jpg);
+	opacity: 0.8;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: yellow;
+}
+
+a {
+	transition: all 500ms ease-in;
+}
+
+article a:hover, aside a:hover {
+	color: crimson;
+	font-family: plasdrip;
+}
+
+aside a {
+	font-size: smaller;
+}
+
+#design-selection li a:last-child {
+	float: right;
+}
+
+footer {
+	height: 60px;
+	padding: 10px 0 5px 5px;
+	text-align: center;
+}
+
+footer a {
+	display: inline-block;
+	width: 100px;
+	padding: 0 1.5vw;
+	margin: 0 0.5vw;
+	border: 2px solid;
+	box-shadow: inset 0 0 20px maroon;
+	outline: 1px solid;
+	outline-offset: 0px;
+	transition: all 1s ease-in;
+}
+
+footer a:link {
+	color: silver;
+	text-shadow: 2px 2px 10px maroon;
+	font-size: larger;
+}
+
+footer a:hover {
+	font-size: 2em;
+	border: 0 solid;
+}
+
+.extra1 {
+	background: url(../img/ghost-clipart-1645.png);
+	width: 250px;
+	height: 460px;
+	position: absolute;
+	right: 10%;
+	top: 0;
+	opacity: 0.5;
+}
+
+.extra2 {
+	background: url(../img/97380_preview.png);
+	top: 20%;
+	left: -1%;
+	width: 363px;
+	height: 477px;
+	position: absolute;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+.extra3 {
+	background: url(../img/12345.png);
+	width: 230px;
+	height: 260px;
+	position: absolute;
+	top: 94%;
+	right: 0;
+	opacity: 0.4;
+}
+
+/** CSS für alle **/
+@media only screen and (max-width: 599px) {
+	
+	.page-wrapper {
+		width: 100%;
+		margin: 0;
+	}
+
+	#zen-intro article {
+		padding: 2%;
+	}
+	
+	main, aside {
+		float: none;
+		width: 100%;
+	}
+	
+	h1 {
+		font-size: 4em;
+	}
+	
+	h2 {
+		font-size: 1.2em;
+	}
+	
+	h3 {
+		font-size: 1em;
+	}
+	
+	p {
+		font-size: smaller;
+	}
+
+	#zen-supporting article:not(#zen-benefits) {
+		columns: 1;
+	}
+	
+	footer a {
+		width: 15vw;
+		padding: 0 2px;
+		margin: 0;
+	}	
+	
+	footer a:link {
+		font-size: 14px;
+	}
+	
+	footer a:hover {
+		font-size: 1.2em;
+		border: 0 solid;
+	}
+
+	aside .wrapper div, #zen-intro article, #zen-supporting article {
+		border-left: none;
+		border-right: none;
+		border-top: none;
+	}	
+	
+	.extra1, .extra2, .extra3 {
+	 display: none;
+	}
+}
+
+@media only screen and (min-width: 600px ) and (max-width: 979px ) {
+	.page-wrapper {
+		width: 90%;
+	}
+	
+	header::after {
+		content: url(../img/UIHere.png);
+		position: absolute;
+		top: 0;
+		left: 5%;
+		opacity: 0.6;
+	}
+	
+	#zen-intro article {
+		padding: 0 5%;
+	}
+	
+	main {
+		width: 100%
+	}
+	
+	footer a {
+		width: 12vw;
+		padding: 0 1vw;
+		margin: 0 0.5vw;
+	}	
+	
+	footer a:hover {
+		font-size: 1.5em;
+		border: 0 solid;
+	}
+	
+	aside {
+		width: 100%;
+	}	
+	
+	.extra1, .extra2, .extra3 {
+	 display: none;
+	}
+}
+
+@media only screen and (min-width: 980px ) and (max-width: 1259px ) {
+
+	.page-wrapper {
+		width: 90%;
+	}
+	
+	header::after {
+		content: url(../img/UIHere.png);
+		position: absolute;
+		top: 0;
+		left: 5%;
+		opacity: 0.6;
+	}
+	
+	main {
+		width: 100%;
+	}
+	
+	aside {
+		float: none;
+		width: 100%;
+	}
+	
+	.extra1 {
+		background: url(../img/ghost-clipart-1645.png);
+		width: 250px;
+		height: 460px;
+		position: absolute;
+		right: 10%;
+		top: 0;
+		opacity: 0.5;
+	}
+
+	.extra2 {
+		background: url(../img/97380_preview.png);
+		top: 20%;
+		left: -1%;
+		width: 363px;
+		height: 477px;
+		position: absolute;
+		opacity: 0.2;
+		z-index: -1;
+	}
+
+	.extra3 {
+		background: url(../img/1234.png);
+		width: 400px;
+		height: 325px;
+		position: absolute;
+		top: 94%;
+		right: 0;
+		opacity: 0.4;
+	}	
+}
+
+@media only screen and (min-width: 1260px ) and (max-width: 1439px ) {
+	
+	.page-wrapper {
+		width: 90%;
+	}
+	
+	header::after {
+		content: url(../img/UIHere.png);
+		position: absolute;
+		top: 0;
+		left: 5%;
+		opacity: 0.8;
+	}
+	
+	main {
+		width: 75%;
+	}
+	
+	body:after {
+		content: url(../img/kisspng-spider-webSmall.png);
+	}
+	
+	.extra1 {
+		right: 0;
+	}
+
+	.extra2 {
+		left: -10%;
+	}
+
+	.extra3 {
+		top: 135%;
+	}
+}
+
+@media only screen and (min-width: 1440px ) {
+	
+	body:after {
+		content: url(../img/kisspng-spider-webSmall.png);
+	}
+	
+	header:after {
+		content: url(../img/UIHere.png);
+		position: absolute;
+		top: 0;
+		left: 10%;
+		opacity: 0.6;
+	}
+}
